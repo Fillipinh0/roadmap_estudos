@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Voce vai quere quantas palhas: <input type="text"  id="coleta"> <button onclick="compra()">Confirmar</button></p> 
+
+    <div id="retorno">
+
+    </div>
+
+    <script>
+        function compra(){
+            var coleta = document.querySelector('#coleta').value
+            var resultado = Number(coleta)
+
+            if(resultado === 2) {
+                retorno.innerHTML += `<p>Voce tem um descoto! Elas saem por 5 reais</p>`
+            }
+            else{
+                if(resultado === 4) {
+                    retorno.innerHTML += `<p>Voce tem desconto! Elas saem por 10 reais</p>`
+                }
+                else{
+                    if(resultado === 6) {
+                        retorno.innerHTML += `<p>Voce tem desconto! Elas saem por 15 reias</p>`
+                    }
+                    else{
+                        retorno. innerHTML =+ `<p>quando compra um numero par voce tem desconto</p>`
+                    }
+
+                }
+            }
+
+        }
+    </script>
+
+</body>
+</html>

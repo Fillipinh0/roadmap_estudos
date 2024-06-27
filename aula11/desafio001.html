@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadania</title>
+</head>
+<body>
+   
+    <p>onde voce é? <input type="text" id="pais"> <button id="confirmar" onclick="local()">confirmar</button> </p> 
+    
+
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        function local(){
+            var pais = document.querySelector(`#pais`)
+            var res = document.querySelector('#resultado');
+            
+            if(pais.value !== 'Brasil') {
+                res.innerHTML += `<p>Voce é Gringo!!</p>`;
+                
+            }
+            else {
+                res.innerHTML += `<p>voce é Brasileiro!!</p>`;
+            }
+        }
+    </script>
+
+</body>
+</html>

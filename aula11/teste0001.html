@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Qual seu Nome?<input type="text" id="name"> <button onclick="chara()">Enviar</button></p>;
+    <div id="retorno">
+        
+    </div>
+
+    <script>
+        function chara(){
+        var resultado = document.querySelector('#name').value;
+        var retorno = document.querySelector('#retorno');
+            if(resultado === `Fillipe`){
+                retorno.innerHTML += `<p>Voce é meu chara!</p>`;
+            }
+            
+            else{
+                retorno.innerHTML += `<p>Que nome legal, mas, nao é o meu ent fds lkkkk</p>`;
+            }    
+        }
+        
+        
+        
+
+    </script>
+
+    
+</body>
+</html>
