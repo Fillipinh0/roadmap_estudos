@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="retorno">
+        <p>
+            <input type="text" id="numero1" >
+            +
+            <input type="text" id="numero2" >
+            <input type="button" id="calcula" onclick="calcular()" value="Calcualr">
+        </p>
+
+    </div>
+    
+
+    <script>
+            let n1 = prompt("Digite o primeiro numero")
+            let n2 = prompt("Digite o segundo numero")
+            let cal = Number(n1) + Number(n2)
+            alert(cal)
+        function calcular() {
+
+            let numero1 = Number(document.querySelector("#numero1").value)
+            let numero2 = Number(document.getElementById("numero2").value)
+            let calcula = numero1 + numero2
+            document.getElementById("retorno")
+            retorno.innerHTML = `<p> A soma é ${calcula} </p>`
+        }
+    </script>
+</body>
+</html>
